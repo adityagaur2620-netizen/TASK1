@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family:"Inter";
 }
 
 /* Navbar */
@@ -45,15 +45,6 @@ body {
   padding: 8px 12px;
   background: transparent;
 }
-.button{
-    position: absolute;
-    left: 14.52%;
-    right: 16.28%;
-    top: 12.5%;
-    bottom: 18.3%;
-    background: #2E3A59;
-}
-
 .search-box button {
   background: none;
   border: none;
