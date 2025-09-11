@@ -1,5 +1,5 @@
-/* Reset */
-* {
+
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,10 +21,12 @@ body {
 }
 
 /* Logo */
-.logo {
-  font-size: 22px;
+.navbar h1{
+  font-size: 24px;
   font-weight: bold;
   color: #000;
+  text-align: left;
+  flex-shrink: 0;
 }
 
 /* Search Box */
@@ -45,7 +47,6 @@ body {
   padding: 8px 12px;
   background: transparent;
 }
-/* Nav Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -240,6 +241,7 @@ body {
     flex-direction: column;
   }
 }
+}
 .trending{
   width: 100%;
   gap: 8px;
@@ -253,7 +255,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  flex-direction: row row-reverse;
+  flex-direction:  row;
 }
 .trending-header h1{
   width: 118px;
@@ -320,4 +322,108 @@ body {
     gap: 15px;
   }
 }
+
+.trending-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.Shoescard {
+  position:relative;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.Shoescard img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+.Shoescard p{
+  font-family: Inter;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  color: rgba(18, 18, 18, 1);
+
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.heart img {
+  width: 100%;
+  height: 100%;
+}
+.explore-colors{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 60px;
+  gap: 125px;
+}
+.explore-colors h2{
+  width: 256px;
+  height: 130px;
+  font-family: "inter";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 65px;
+  line-height: 60px;
+  letter-spacing: -3px;
+  color:rgba(18, 18, 18, 1);
+}
+.color-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 800px; /* control width */
+}
+
+.color-btn{
+  width: 182px;
+  height: 57px;
+  gap: 12px;
+  opacity: 1;
+  border-width: 1px;
+  border-radius: 200px;
+  font-size: 16px;
+  color: rgba(18, 18, 18, 1);
+  padding: 20px 12px;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 1px;
+  font-style: bold;
+}
+.color-btn1{
+  width: 124px;
+  height: 57px;
+  gap: 10px;
+  opacity: 1;
+  border-width: 1px;
+  border-radius: 200px;
+  font-size: 14px;
+  color: rgba(18, 18, 18, 1);
+  padding: 20px 12px;
+  display: inline-flex;
+  align-items: flex;
+  letter-spacing: 1px;
+  font-style: bold;
+}
+
+.color-circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
 }
