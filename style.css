@@ -287,11 +287,6 @@ body {
   color: rgba(18, 18, 18, 0.8);
   padding : 1px 1px 1px 1px;
 }
-.filter-btn:hover{
-  width: 63px;
-  height: 24px;
-  background-color: rgba(221, 221, 221, 0.8);
-  }
 .btn1{
   border-radius: 25px;
   width: 115px;
@@ -306,11 +301,7 @@ body {
   color: rgba(255, 255, 255, 1);
   padding : 1px 1px 1px 1px;
 }
-.btn1:hover{
-  width: 63px;
-  height: 24px;
-  background-color: rgb(240, 221, 221);
-}
+ 
 @media (max-width: 768px) {
   .trending {
     padding: 30px 20px;
@@ -427,3 +418,216 @@ body {
   border-radius: 50%;
   display: inline-block;
 }
+.testimonial {
+  width: 100%;
+  height: 636px;
+  margin:  40px auto;
+  gap: 8px;
+  padding: 40px;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 40px 0;
+  box-sizing: border-box;
+}
+
+.testimonial-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  display: block;
+}
+
+.testimonial-text {
+  position: absolute;
+  font-family: "inter";
+  top: 50%;
+  left: 140px; 
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 1);
+  max-width: 511px; 
+}
+.testimonial-text h4 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.testimonial-text h2 {
+  font-size: 65px;  
+  line-height: 65px; 
+  font-weight: 400;  
+  letter-spacing: -4px;
+  margin-bottom: 20px;
+}
+.testimonial-text p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.testimonial-text h5 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.testimonial-text .role {
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .testimonial-text {
+    position: static;
+    transform: none;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .testimonial-text h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2px;
+  }
+
+  .testimonial-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.Section{
+  padding: 40px 60px;
+  text-align: center;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.Section .head h2 {
+  font-family: "inter",sans-serif;
+  width: 520px;
+  text-align: left;
+  height: 140px;
+  font-size: 60px;
+  line-height: 65px;
+  letter-spacing: -3px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  color:rgba(18, 18, 18, 1);
+}
+.Section .frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px; 
+  flex-wrap: wrap; 
+}
+.Section .frame > div {
+  font-family: "inter",sans-serif;
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.Section .frame img.icon {
+  background: #000;
+  border-radius: 200px;
+  padding: 1px;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.Section h1 {
+  width: 410px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: rgba(18,18,18,1);
+}
+.Section p {
+  width: 380px;
+  height: 104px;
+  opacity: 0.8;
+  font-weight: 400;
+  gap: 4px;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  color:rgba(18,18,18,1)
+}
+/* Blog Section */
+.Blog {
+  padding: 60px;
+  font-family: "inter",sans-serif;
+}
+
+.Blog .title h1 {
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.Blog .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.Blog .image img {
+  width: 654px;
+  height: 367px;
+  border-radius: 20px; /* Rounded corners */
+  object-fit: cover;
+}
+
+.cont {
+  flex: 1;
+}
+
+.cont h2 {
+  width: 606px;
+  height: 195px;
+  font-size: 60px;
+  line-height: 65px;
+  letter-spacing: -3px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cont p {
+  font-size: 18px;
+  width: 566px;
+  height: 78px;
+  line-height: 26px;
+  color: rgba(18, 18, 18, 1);
+  opacity: 80%;
+  letter-spacing: -0,3px;
+  margin-bottom: 20px;
+}
+
+.Blog .btn {
+  display:inline-block;
+  border: none;
+  border-radius: 30px;
+  width: 10px;
+  color: rgb(219, 249, 249);
+  text-align: center;
+  width: 169px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 1px;
+}
+
+
