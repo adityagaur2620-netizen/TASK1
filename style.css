@@ -6,41 +6,46 @@
 }
 
 body {
-  font-family:"Inter";
+  font-family:"Inter",sans-serif;
 }
 
-/* Navbar */
 .navbar {
+  width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 20px 60px;
   background: white;
+  margin: 3px;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
-
-/* Logo */
 .navbar h1{
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: 1000;
   text-align: left;
-  flex-shrink: 0;
+  flex: 0  0 auto;
+  letter-spacing: -1px;
+  color: #000;
 }
-
-/* Search Box */
 .search-box {
+  margin-right: 150px;
+  width: 312px;
+  height: 34px;
   display: flex;
-  align-items: center;
+  align-items:center;
   border: 1px solid #ccc;
   border-radius: 25px;
-  padding: 5px 10px;
+  padding: 20px 20px;
   gap: 8px;
+  left: 245px;
+  top: 23px;
   background: #f9f9f9;
 }
 
-.search-box input {
+.search-box input{
   border: none;
   flex: 1;
   outline: none;
@@ -48,23 +53,31 @@ body {
   background: transparent;
 }
 .nav-links {
+  margin-right: 150px;
   list-style: none;
+  left: 50%;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .nav-links a {
+  width: 33px;
+  height: 16px;
   text-decoration: none;
   font-size: 16px;
-  color: #333;
+  color: rgba(18,18,18,1);
   transition: 0.3s;
+  opacity: 50%;
+  line-height: 16px;
 }
-
-.nav-links a:hover {
-    width: 20px;
-    height: 20px;
-    opacity: 0.5;
-    color: #d4dde6;
+.icon{
+  margin-right: 50px;
+  width: 24px;
+  height: 24px;
+  gap: 8px;
+  top: 28px;
+  left: 1263px;
+  cursor: pointer;
 }
 
 /* Hamburger */
@@ -122,7 +135,7 @@ body {
 .hero {
     position: relative;
     width: 958px;
-    height: 770px; /* Full screen height */
+    height: 770px;
     background: url("image 3.png") no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -177,6 +190,7 @@ body {
 }
 .btn:hover {
   background:rgba(18,18,18,1);
+  color: wheat;
 }
 
 /* Cards */
@@ -188,6 +202,8 @@ body {
 
 }
 .card {
+  width: 100%;
+  height: 100%;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -195,12 +211,11 @@ body {
 }
 
 .card img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
+  border-radius: 30px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+
 
 .card:hover img {
   transform: scale(1.05);
@@ -260,7 +275,7 @@ body {
 .trending-header h1{
   width: 118px;
   height: 38px;
-  font-family:"inter";
+  font-family:"inter",sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
@@ -563,8 +578,9 @@ body {
   letter-spacing: -0.3px;
   color:rgba(18,18,18,1)
 }
-/* Blog Section */
 .Blog {
+  width: 100%;
+  height: 555px;
   padding: 60px;
   font-family: "inter",sans-serif;
 }
@@ -616,18 +632,164 @@ body {
   margin-bottom: 20px;
 }
 
-.Blog .btn {
-  display:inline-block;
-  border: none;
+.Blog .btn5{
+  display: inline-block;
+  padding: 1px 1px ;
+  background-color: rgb(255,255,255,1);
   border-radius: 30px;
-  width: 10px;
-  color: rgb(219, 249, 249);
+  color: rgb(18,18,18,1);
   text-align: center;
   width: 169px;
+  height: 50px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 650;
   line-height: 24px;
-  border: 1px;
+  border: 1px solid;
 }
+.Footer{
+  width: 100%;
+  height: 341px;
+  font-family: "inter",sans-serif;
+  background-color: rgba(18,18,18,1);
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 60px 80px;
+  gap: 50px;
+}
+
+.content1 {
+  flex: 1;
+  max-width: 400px;
+}
+
+.content1 h2 {
+  font-weight: 800;
+  width: 290px;
+  height: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.content1 p {
+  width: 290px;
+  height: 60px;
+  opacity: 52%;
+  font-size: 14px;
+  line-height: 22px;
+  color: #bbb;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.feild {
+  width: 450px;
+  display: block;
+  border: transparent;
+  border-radius: 25px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.feild input {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(18, 18, 18, 1);
+  flex: 1;
+  border-radius: 25px;
+  padding: 10px 15px;
+  outline: none;
+  border-color: white;
+  font-size: 13px;
+  line-height: 21px;
+  top: 12px;
+  opacity: 52%;
+}
+
+.feild button {
+  background: rgba(255, 255, 255, 1);
+  color: rgba(18, 18, 18, 1);
+  border-radius: 25px;
+  font-size: 13px;
+  line-height: 21px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.content2 {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-col1 h1{
+  margin-left: 400px;
+  width: 59px;
+  top: 60px;
+  left: 392px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 11px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.footer-col h2{
+  width: 59px;
+  top: 60px;
+  left: 392px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 11px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.footer-col h3{
+  width: 59px;
+  top: 60px;
+  left: 392px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 11px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.footer-col1 ul{
+  margin-left: 400px;
+  width: 76px;
+  height: 176px;
+  color: rgba(255, 255, 255, 1);
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+.footer-col1 ul li{
+  margin-bottom: 8px;
+  color: #bbb;
+  width: 176px;
+  font-size: 13px;
+  line-height: 16px;
+  opacity: 52%;
+}
+.footer-col ul{
+  width: 76px;
+  height: 176px;
+  color: rgba(255, 255, 255, 1);
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.footer-col ul li{
+  margin-bottom: 8px;
+  color: #bbb;
+  width: 176px;
+  font-size: 13px;
+  line-height: 16px;
+  opacity: 52%;
+}
+
 
 
