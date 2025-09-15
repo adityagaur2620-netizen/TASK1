@@ -259,7 +259,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .hero-section {
-    grid-template-columns: 1fr; /* Stack hero and cards */
+    grid-template-columns: 1fr;
     padding: 20px;
     gap: 20px;
   }
@@ -272,7 +272,7 @@ body {
   }
   .hero {
     min-height: 40vh;
-    text-align:left;
+    text-align: left;
     padding: 10px 20px;
   }
   .hero-card {
