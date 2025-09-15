@@ -159,7 +159,7 @@ body {
 .hero {
     position: relative;
     height: 100%;
-    width: 960px;
+    width: 100%;
     background: url("image 3.png") no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -171,7 +171,7 @@ body {
   width: 100%;
   max-width: 958px;
   opacity: 1;
-  position: absolute;
+
   top: 60px;
   left: 60px;
   gap: 28px;
@@ -261,16 +261,25 @@ body {
   .hero-section {
     grid-template-columns: 1fr; /* Stack hero and cards */
     padding: 20px;
+    gap: 20px;
   }
-  .hero  {
-    height: 70vh;
+  .hero-content {
+    position: relative;
+    max-width: 100%;
+    top: auto;
+    left: auto;
+    text-align: left;
+  }
+  .hero {
+    min-height: 40vh;
     text-align:left;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
-
   .hero-card {
-    flex-direction: row; 
+    flex-direction: row;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .trending{
@@ -871,8 +880,40 @@ body {
   line-height: 16px;
   opacity: 52%;
 }
-@media(max-width:768px){
-.footer-col,.footer-col1{
-  display: block;
-}
+
+@media (max-width: 768px) {
+  .Footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+    height: auto;
+    gap: 30px;
+  }
+
+  .content1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+footer-col1,
+  .footer-col {
+    width: 100%;
+    margin: 0 ;
+    padding: 0 ;
+  }
+
+  .footer-col1 h1,
+  .footer-col1 ul,
+  .footer-col h2,
+  .footer-col h3,
+  .footer-col ul {
+    margin: 0;
+    padding: 0;
+  }
 }
